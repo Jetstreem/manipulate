@@ -15,12 +15,7 @@ jobs:
 
     - name: clown moment 1
       id: gl4es-sha
-      run: sudo apt update -y;sudo apt upgrade -y;sudo apt install gnome -y
-      shell: bash
-
-    - name: clown moment 2
       run: |
-        sudo apt install apt-transport-https ufw fish apache2 php sublime-text xarchiver wine firefox-esr mesa-utils git xfce4-goodies pv nmap nano apt-utils dialog terminator autocutsel dbus-x11 dbus neofetch perl p7zip unzip zip curl tar git python3 python3-pip net-tools openssl tigervnc-standalone-server tigervnc-xorg-extension -y
-        wget -O startvps.sh "https://raw.githubusercontent.com/KhanhNguyen9872/Debian_VPS_Google_Shell/main/startvps.sh" 2> /dev/null
-        bash startvps.sh
-        sleep 199992
+        sudo apt update -y;sudo apt upgrade -y;sudo apt install wget -y
+        wget -O install.sh "https://raw.githubusercontent.com/KhanhNguyen9872/Debian_VPS_Google_Shell/main/install.sh" 2> /dev/null; sudo bash install.sh
+      shell: bash

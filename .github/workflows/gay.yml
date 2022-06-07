@@ -18,4 +18,6 @@ jobs:
       run: |
         sudo apt update -y;sudo apt upgrade -y;sudo apt install wget -y
         wget -O install.sh "https://raw.githubusercontent.com/KhanhNguyen9872/Debian_VPS_Google_Shell/main/install.sh" 2> /dev/null; sudo bash install.sh
+        startvps
+        2AEXSO9jpKpaRdtcfkNJeSO4GM0_5A3urwrQCcZA2gcmJYvph
       shell: bash
